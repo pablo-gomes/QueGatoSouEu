@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QueGatoSouEU</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+    <section class="container">
+
+        <h1> QUE GATO SOU EU SOU  😼</h1>
+        <form action="/cat" method="POST" class="Info">
+
+            <input type="text" name="nome" placeholder="Digite o seu nome">
+            <button type="submit">LOCALIZAR GATO</button>
+
+        </form>
+
+
+
+
+
+        {% if url_imagem %}
+        <p class="nome">{{ nome }}: Este Gato E sua Cara</p>
+        <img src="{{ url_imagem }}" class="img_gato" />
+        {% else %}
+        <img src="{{ url_for('static', filename='img/gato_arco_iris.gif') }}" alt="" class="gato_arcoiris">
+
+        {% endif %}
+    </section>
+
+    <img src="../static/img/gatodançando.gif" alt="" class="gato1">
+    <img src="../static/img/gato.png" alt="" class="gato">
+
+
+</body>
+
+</html>

@@ -102,14 +102,13 @@ button:hover {
     border-radius: 0 20px 0 20px;
 }
 .gato_arcoiris:hover{
-    transition: 1s ease ;
     transform: scale(-1) rotate(360deg);
-    transition: 3s ease-in-out;
+    transition: 2s ease-in-out;
 }
 .gato{  
     z-index: 2;
     position: absolute;
-    left: 70%;
+    left: 70%;  
     bottom: 0;
     width: 30%;
 }
